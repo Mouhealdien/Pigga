@@ -1,0 +1,357 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media(max-width: 37.5em) {
+            @content
+        }
+        ; //600px
+    }
+    @if $breakpoint==tab-port {
+        @media(max-width: 56.25em) {
+            @content
+        }
+        ; //900px
+    }
+    @if $breakpoint==tab-land {
+        @media(max-width: 75em) {
+            @content
+        }
+        ; //1200px
+    }
+    @if $breakpoint==big-desktop {
+        @media(min-width: 112.5em) {
+            @content
+        }
+        ; //1800px
+    }
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+
+.nav__first {
+    border-bottom: 1px solid gray;
+    &__img {
+        max-width: 75px;
+    }
+    &--a {
+        color: #bc8c4c;
+        &:hover {
+            color: #a4783d;
+        }
+    }
+    &__li {
+        color: white;
+    }
+}
+
+.nav__second {
+    top: 0;
+    z-index: 10002;
+    &__li {
+        color: white;
+        &:hover {
+            color: rgba(239, 236, 236, 0.821);
+        }
+        @media (max-width:767px) {
+            display: block !important;
+            margin-left: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+    &__btn {
+        color: white;
+        background-color: #bc8c4c;
+        &:hover {
+            background-color: #a4783d;
+            color: white;
+        }
+    }
+    &__p {
+        color: gray
+    }
+}
+
+.hed2 {
+    position: relative;
+    background: url(../images/header.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 650px;
+}
+
+.themain {
+    position: absolute;
+    background: rgba(33, 37, 41, 0.85);
+    color: white;
+    height: 100%;
+    width: 100%;
+    &__img {
+        filter: drop-shadow(0 0 40px rgba(206, 212, 218, 0.4));
+        width: 12rem;
+    }
+    &__h5 {
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+        @include respond(tab-port) {
+            font-size: 1.2rem;
+        }
+    }
+    &__h1 {
+        font-size: 5rem;
+        @include respond(tab-port) {
+            font-size: 3.5rem;
+        }
+        @include respond(phone) {
+            font-size: 2.1rem;
+        }
+    }
+    &__btn {
+        background-color: #bc8c4c;
+        color: white;
+        margin-top: 1rem;
+        &:hover {
+            background-color: #a4783d;
+            color: white;
+        }
+    }
+}
+
+//header end
+.about {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &__h6 {
+        color: hsla(0, 0%, 50%, 0.5);
+    }
+    &__h4 {
+        font-size: 4rem;
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
+        @include respond(tab-port) {
+            font-size: 2.1rem;
+        }
+    }
+    &__li {
+        color: rgba(128, 128, 128, 0.515);
+        @include respond(phone) {
+            font-size: .8rem;
+        }
+    }
+    &__p {
+        @include respond(phone) {
+            font-size: .8rem;
+        }
+    }
+}
+
+.s {
+    color: rgb(128, 128, 128);
+}
+
+.dishes {
+    background-image: url(../images/style-4.png);
+    &__h5 {
+        color: hsla(0, 0%, 50%, 0.5);
+        line-height: 0;
+    }
+    &__overlay {
+        background: rgba(248, 247, 247, 0.50);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 7rem;
+        padding-top: 7rem;
+    }
+    &__np {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px dotted black;
+    }
+    &__img {
+        margin-right: 10px;
+        width: 70px;
+        min-width: 70px;
+    }
+    &__h6 {
+        color: #bc8c4c;
+    }
+    &__p {
+        color: gray;
+    }
+}
+
+.menu {
+    position: relative;
+    background: url(../images/section.jpg) no-repeat center top fixed;
+    background-size: cover;
+    &__overlay {
+        background: rgba(0, 0, 0, 0.671);
+        height: 100%;
+        width: 100%;
+        padding-bottom: 9rem;
+        padding-top: 4rem;
+    }
+    &__contain {
+        background-color: white;
+        width: 70%;
+    }
+    &__head {
+        margin-top: 2rem;
+    }
+    &__h5 {
+        color: hsla(0, 0%, 50%, 0.893);
+    }
+    &__h1 {
+        color: white;
+    }
+    &__h6 {
+        color: #a4773dc5;
+    }
+    &__p {
+        color: gray;
+        border-bottom: 1px dotted black;
+        @include respond(phone) {
+            font-size: 15px;
+        }
+    }
+    &__btn {
+        //margin-left: 30rem;
+        background-color: #bc8c4c;
+    }
+}
+
+.chefs {
+    &__h1 {
+        color: rgb(65, 64, 64);
+    }
+    &__img {
+        border-radius: 50%;
+        width: 12rem;
+    }
+    &__li {
+        font-size: 1.5rem;
+        color: #bc8c4c;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+//chefs end
+.clients {
+    background-image: url(../images/style-3.png);
+    padding-top: 5rem;
+    &__card {
+        width: 25rem;
+        margin: auto;
+        border: 1px solid rgba(128, 128, 128, 0.181);
+        box-shadow: 5px 5px 10px 10px rgba(5, 5, 5, 0.2);
+        @media(max-width: 1250px) {
+            width: 18rem;
+        }
+        @include respond(tab-port) {
+            width: 18rem;
+        }
+        @include respond(phone) {
+            width: 18rem;
+        }
+    }
+    &__img {
+        border-radius: 50%;
+    }
+    &__h6 {
+        color: hsla(0, 0%, 50%, 0.893);
+    }
+    &__p {
+        color: gray;
+    }
+}
+
+//clients end
+.contact {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    &__form {
+        width: 40%;
+        @include respond(tab-port) {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    &__input {
+        width: 100%;
+        padding: 1rem 1rem;
+        border-color: rgba(128, 128, 128, 0.162);
+        margin-left: 1rem;
+        @media (max-width: 995px) {
+            width: 100%;
+        }
+        @include respond(tab-port) {
+            width: 100%;
+        }
+        @include respond(phone) {
+            max-width: 100%;
+        }
+    }
+    &__img {
+        @media (max-width: 995px) {
+            width: 50%;
+        }
+        @include respond(phone) {
+            display: none;
+        }
+        @include respond(tab-port) {
+            display: none;
+            margin: auto;
+        }
+    }
+    &__btn {
+        color: white;
+        background-color: #bc8c4c;
+        width: 100%;
+        margin-left: 0;
+        &:hover {
+            background-color: #a4783d;
+            color: white;
+        }
+    }
+    &__p {
+        color: rgba(128, 128, 128, 0.538);
+        font-size: 13px;
+    }
+    &__a {
+        color: #bc8c4c;
+        &:hover {
+            color: #a4783d;
+        }
+    }
+}
+
+.foot {
+    &__ul {
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        @media ( max-width: 455px) {
+            margin: auto !important;
+            font-size: 12px;
+        }
+    }
+    &__li {
+        @media (max-width: 767px) {
+            display: inline-block!important;
+        }
+    }
+    &__img {
+        @media ( max-width: 455px) {
+            margin: auto !important;
+        }
+    }
+}
+
+.fa {
+    &:hover {
+        color: rgba(239, 236, 236, 0.821);
+    }
+}

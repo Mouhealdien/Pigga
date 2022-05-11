@@ -1,0 +1,426 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.nav__first {
+  border-bottom: 1px solid gray;
+}
+
+.nav__first__img {
+  max-width: 75px;
+}
+
+.nav__first--a {
+  color: #bc8c4c;
+}
+
+.nav__first--a:hover {
+  color: #a4783d;
+}
+
+.nav__first__li {
+  color: white;
+}
+
+.nav__second {
+  top: 0;
+  z-index: 10002;
+}
+
+.nav__second__li {
+  color: white;
+}
+
+.nav__second__li:hover {
+  color: rgba(239, 236, 236, 0.821);
+}
+
+@media (max-width: 767px) {
+  .nav__second__li {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+.nav__second__btn {
+  color: white;
+  background-color: #bc8c4c;
+}
+
+.nav__second__btn:hover {
+  background-color: #a4783d;
+  color: white;
+}
+
+.nav__second__p {
+  color: gray;
+}
+
+.hed2 {
+  position: relative;
+  background: url(../images/header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 650px;
+}
+
+.themain {
+  position: absolute;
+  background: rgba(33, 37, 41, 0.85);
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.themain__img {
+  -webkit-filter: drop-shadow(0 0 40px rgba(206, 212, 218, 0.4));
+          filter: drop-shadow(0 0 40px rgba(206, 212, 218, 0.4));
+  width: 12rem;
+}
+
+@media (max-width: 37.5em) {
+  .themain__h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .themain__h5 {
+    font-size: 1.2rem;
+  }
+}
+
+.themain__h1 {
+  font-size: 5rem;
+}
+
+@media (max-width: 56.25em) {
+  .themain__h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .themain__h1 {
+    font-size: 2.1rem;
+  }
+}
+
+.themain__btn {
+  background-color: #bc8c4c;
+  color: white;
+  margin-top: 1rem;
+}
+
+.themain__btn:hover {
+  background-color: #a4783d;
+  color: white;
+}
+
+.about {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about__h6 {
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.about__h4 {
+  font-size: 4rem;
+}
+
+@media (max-width: 37.5em) {
+  .about__h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .about__h4 {
+    font-size: 2.1rem;
+  }
+}
+
+.about__li {
+  color: rgba(128, 128, 128, 0.515);
+}
+
+@media (max-width: 37.5em) {
+  .about__li {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .about__p {
+    font-size: .8rem;
+  }
+}
+
+.s {
+  color: gray;
+}
+
+.dishes {
+  background-image: url(../images/style-4.png);
+}
+
+.dishes__h5 {
+  color: rgba(128, 128, 128, 0.5);
+  line-height: 0;
+}
+
+.dishes__overlay {
+  background: rgba(248, 247, 247, 0.5);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 7rem;
+  padding-top: 7rem;
+}
+
+.dishes__np {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dotted black;
+}
+
+.dishes__img {
+  margin-right: 10px;
+  width: 70px;
+  min-width: 70px;
+}
+
+.dishes__h6 {
+  color: #bc8c4c;
+}
+
+.dishes__p {
+  color: gray;
+}
+
+.menu {
+  position: relative;
+  background: url(../images/section.jpg) no-repeat center top fixed;
+  background-size: cover;
+}
+
+.menu__overlay {
+  background: rgba(0, 0, 0, 0.671);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 9rem;
+  padding-top: 4rem;
+}
+
+.menu__contain {
+  background-color: white;
+  width: 70%;
+}
+
+.menu__head {
+  margin-top: 2rem;
+}
+
+.menu__h5 {
+  color: rgba(128, 128, 128, 0.893);
+}
+
+.menu__h1 {
+  color: white;
+}
+
+.menu__h6 {
+  color: #a4773dc5;
+}
+
+.menu__p {
+  color: gray;
+  border-bottom: 1px dotted black;
+}
+
+@media (max-width: 37.5em) {
+  .menu__p {
+    font-size: 15px;
+  }
+}
+
+.menu__btn {
+  background-color: #bc8c4c;
+}
+
+.chefs__h1 {
+  color: #414040;
+}
+
+.chefs__img {
+  border-radius: 50%;
+  width: 12rem;
+}
+
+.chefs__li {
+  font-size: 1.5rem;
+  color: #bc8c4c;
+}
+
+.chefs__li:hover {
+  font-weight: bold;
+}
+
+.clients {
+  background-image: url(../images/style-3.png);
+  padding-top: 5rem;
+}
+
+.clients__card {
+  width: 25rem;
+  margin: auto;
+  border: 1px solid rgba(128, 128, 128, 0.181);
+  -webkit-box-shadow: 5px 5px 10px 10px rgba(5, 5, 5, 0.2);
+          box-shadow: 5px 5px 10px 10px rgba(5, 5, 5, 0.2);
+}
+
+@media (max-width: 1250px) {
+  .clients__card {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .clients__card {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .clients__card {
+    width: 18rem;
+  }
+}
+
+.clients__img {
+  border-radius: 50%;
+}
+
+.clients__h6 {
+  color: rgba(128, 128, 128, 0.893);
+}
+
+.clients__p {
+  color: gray;
+}
+
+.contact {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.contact__form {
+  width: 40%;
+}
+
+@media (max-width: 56.25em) {
+  .contact__form {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-color: rgba(128, 128, 128, 0.162);
+  margin-left: 1rem;
+}
+
+@media (max-width: 995px) {
+  .contact__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .contact__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .contact__input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 995px) {
+  .contact__img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .contact__img {
+    display: none;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .contact__img {
+    display: none;
+    margin: auto;
+  }
+}
+
+.contact__btn {
+  color: white;
+  background-color: #bc8c4c;
+  width: 100%;
+  margin-left: 0;
+}
+
+.contact__btn:hover {
+  background-color: #a4783d;
+  color: white;
+}
+
+.contact__p {
+  color: rgba(128, 128, 128, 0.538);
+  font-size: 13px;
+}
+
+.contact__a {
+  color: #bc8c4c;
+}
+
+.contact__a:hover {
+  color: #a4783d;
+}
+
+.foot__ul {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (max-width: 455px) {
+  .foot__ul {
+    margin: auto !important;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .foot__li {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 455px) {
+  .foot__img {
+    margin: auto !important;
+  }
+}
+
+.fa:hover {
+  color: rgba(239, 236, 236, 0.821);
+}
+/*# sourceMappingURL=main.css.map */
